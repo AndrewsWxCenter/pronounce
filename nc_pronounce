@@ -1,0 +1,733 @@
+<html>
+
+<head>
+
+
+
+<!-- Reference to tables.css script in Hostinger File Manager -->
+    <link rel="stylesheet" type="text/css" href="https://www.andrewswxcenter.com/files/style.css">
+
+    <script src="tsorter.min.js" type="text/javascript"></script>
+
+    <script>
+
+function init() {
+    var sorter1 = tsorter.create('rivers');
+    var sorter2 = tsorter.create('lakes');
+}
+
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+function GetClock(){
+var tzOffset = 0;
+var d=new Date();
+var dx=d.toGMTString();
+dx=dx.substr(0,dx.length -3);
+d.setTime(Date.parse(dx))
+d.setHours(d.getHours()+tzOffset);
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+if(nyear<1000) nyear+=1900;
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+if(nmin<=9) nmin="0"+nmin
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+}
+
+var addFunctionOnWindowLoad = function(callback){
+      if(window.addEventListener){
+          window.addEventListener('load',callback,false);
+      }else{
+          window.attachEvent('onload',callback);
+      }
+}
+
+addFunctionOnWindowLoad(init);
+addFunctionOnWindowLoad(GetClock);
+
+    </script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<table id="procities" class="procities">
+<caption style="font-weight:bold; font-size:17px";>NORTH CAROLINA CITIES:<br></caption>
+<thead>
+<tr>
+<th>City</th>
+<th>Pronunciation</th>
+<th>City</th>
+<th>Pronunciation</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Aberdeen</td>
+<td>AB-ur-deen</td>
+<td>Greenevers</td>
+<td>GREEN-evurrs</td>
+</tr>
+<tr>
+<td>Advance</td>
+<td>ADD-vantz</td>
+<td>Icard</td>
+<td>EYE-kard</td>
+</tr>
+<tr>
+<td>Ahoskie</td>
+<td>uh-HOSS-key</td>
+<td>Ivanhoe</td>
+<td>EYE-ven-ho</td>
+</tr>
+<tr>
+<td>Alamance</td>
+<td>ALLA-mantz</td>
+<td>Kannapolis</td>
+<td>can-NAP-oh-liss</td>
+</tr>
+<tr>
+<td>Albemarle</td>
+<td>ALBA-marr-ull</td>
+<td>Kittrell</td>
+<td>KIT-trul</td>
+</tr>
+<tr>
+<td>Altamahaw</td>
+<td>ALL-tuh-muh-HA</td>
+<td>Kure Beach</td>
+<td>CURE-ee</td>
+</tr>
+<tr>
+<td>Angier</td>
+<td>ANN-jure</td>
+<td>Lake Junaluska</td>
+<td>JOON-uh-LUSS-kuh</td>
+</tr>
+<tr>
+<td>Arapahoe</td>
+<td>uh-RAP-uh-ho</td>
+<td>Lucama</td>
+<td>loo-COMMA</td>
+</tr>
+<tr>
+<td>Aulander</td>
+<td>AWW-lander</td>
+<td>Mamers</td>
+<td>MAY-murrs</td>
+</tr>
+<tr>
+<td>Autryville</td>
+<td>AWW-tree-vill</td>
+<td>Manteo</td>
+<td>MAN-tee-oh</td>
+</tr>
+<tr>
+<td>Avon</td>
+<td>AYE-vonn</td>
+<td>Mebane</td>
+<td>MEH-bunn</td>
+</tr>
+<tr>
+<td>Ayden</td>
+<td>AYE-den</td>
+<td>Mesic</td>
+<td>MESS-ick</td>
+</tr>
+<tr>
+<td>Badin</td>
+<td>BAY-den</td>
+<td>Misenheimer</td>
+<td>MIZE-en-HI-mer</td>
+</tr>
+<tr>
+<td>Bahama</td>
+<td>buh-HAY-muh</td>
+<td>Momeyer</td>
+<td>MOE-my-err</td>
+</tr>
+<tr>
+<td>Beaufort</td>
+<td>BO-furt</td>
+<td>Moyock</td>
+<td>MOY-YOCK</td>
+</tr>
+<tr>
+<td>Belvoir</td>
+<td>bell-VWA</td>
+<td>Navassa</td>
+<td>nuh-VASSS-uh</td>
+</tr>
+<tr>
+<td>Bogue</td>
+<td>BOAG</td>
+<td>Ossipee</td>
+<td>AHH-sih-pee</td>
+</tr>
+<tr>
+<td>Brevard</td>
+<td>breh-VARD</td>
+<td>Parmele</td>
+<td>PAR-muh-lee</td>
+</tr>
+<tr>
+<td>Buies Creek</td>
+<td>BOO-ees Creek</td>
+<td>Pfafftown</td>
+<td>POFF-town</td>
+</tr>
+<tr>
+<td>Cajah&#39;s Mountain</td>
+<td>KAY-JUHs Mountain</td>
+<td>Peletier</td>
+<td>PELL-LA-teer</td>
+</tr>
+<tr>
+<td>Calypso</td>
+<td>kuh-LIP-so</td>
+<td>Plymouth</td>
+<td>PLIM-muth</td>
+</tr>
+<tr>
+<td>Cape Carteret</td>
+<td>Cape CAR-turr-ett</td>
+<td>Raeford</td>
+<td>RAY-ferd</td>
+</tr>
+<tr>
+<td>Casar</td>
+<td>KAY-zarr</td>
+<td>Ramseur</td>
+<td>RAM-surr</td>
+</tr>
+<tr>
+<td>Cashiers</td>
+<td>CASH-urrs</td>
+<td>Rodanthe</td>
+<td>ro-DANTH-ee</td>
+</tr>
+<tr>
+<td>Castalia</td>
+<td>kass-TALE-ee-uh</td>
+<td>Rougemont</td>
+<td>ROOJ-mont</td>
+</tr>
+<tr>
+<td>Catawba</td>
+<td>kuh-TAH-buh</td>
+<td>Roxobel</td>
+<td>ROCK-sobul</td>
+</tr>
+<tr>
+<td>Cerro Gordo</td>
+<td>SAIR-oh GORD-o</td>
+<td>Saxapahaw</td>
+<td>SACKS-uh-pa-hah</td>
+</tr>
+<tr>
+<td>Chalybeate Springs</td>
+<td>ka-LIB-ee-utt</td>
+<td>Schley</td>
+<td>SLY</td>
+</tr>
+<tr>
+<td>Chinquapin</td>
+<td>CHINK-uh-pin</td>
+<td>Severn</td>
+<td>SEV-urn</td>
+</tr>
+<tr>
+<td>Chocowinity</td>
+<td>CHOCK-o-WIN-it-tee</td>
+<td>Shallotte</td>
+<td>sha-LOAT</td>
+</tr>
+<tr>
+<td>Conetoe</td>
+<td>kuh-NEE-tuh</td>
+<td>Stovall</td>
+<td>STOVE-ull</td>
+</tr>
+<tr>
+<td>Cooleemee</td>
+<td>COOL-uh-mee</td>
+<td>Swannanoa</td>
+<td>SWAH-nuh-NO-uh</td>
+</tr>
+<tr>
+<td>Corolla</td>
+<td>ka-RAW-la</td>
+<td>Tyro</td>
+<td>TIE-row</td>
+</tr>
+<tr>
+<td>Cullowhee</td>
+<td>KULLA-wee</td>
+<td>Valdese</td>
+<td>VAL-dees</td>
+</tr>
+<tr>
+<td>Dortches</td>
+<td>DOOR-chez</td>
+<td>Valle Crucis</td>
+<td>VALLEY croo-sis</td>
+</tr>
+<tr>
+<td>Dundarrach</td>
+<td>dun-DARR-uck</td>
+<td>Vass</td>
+<td>VASSSS</td>
+</tr>
+<tr>
+<td>Enochville</td>
+<td>EE-nock-vill</td>
+<td>Wagram</td>
+<td>WAY-grum</td>
+</tr>
+<tr>
+<td>Etowah</td>
+<td>ET-tuh-wuh</td>
+<td>Wanchese</td>
+<td>WAHN-cheese</td>
+</tr>
+<tr>
+<td>Eureka</td>
+<td>u-REEK-uh</td>
+<td>Watha</td>
+<td>WAH-tha</td>
+</tr>
+<tr>
+<td>Fearrington Village</td>
+<td>FAIR-ing-tun</td>
+<td>Waxhaw</td>
+<td>WACKS-ahh</td>
+</tr>
+<tr>
+<td>Fuquay-Varina</td>
+<td>FEW-kway Vuh-REENA</td>
+<td>Wendell</td>
+<td>win-DELL</td>
+</tr>
+<tr>
+<td>Gerton</td>
+<td>GURT-un</td>
+<td>Zebulon</td>
+<td>ZEB-you-luhn</td>
+</tr>
+<tr>
+<td>Gloucester</td>
+<td>GLOSS-turr</td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+
+<table id="procounties" class="procounties">
+<caption style="font-weight:bold; font-size:17px";>NORTH CAROLINA COUNTIES:<br></caption>
+<thead>
+<tr>
+<th>County</th>
+<th>Pronunciation</th>
+<th>County</th>
+<th>Pronunciation</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Alamance</td>
+<td>ALA-mantz</td>
+<td>Guilford</td>
+<td>GILL-ferd</td>
+</tr>
+<tr>
+<td>Alleghany</td>
+<td>al-uh-GAIN-ee</td>
+<td>Harnett</td>
+<td>HARR-net</td>
+</tr>
+<tr>
+<td>Ashe</td>
+<td>ASH</td>
+<td>Hyde</td>
+<td>HIDE</td>
+</tr>
+<tr>
+<td>Beaufort</td>
+<td>BO-furt</td>
+<td>Iredell</td>
+<td>EYE-ur-del</td>
+</tr>
+<tr>
+<td>Bertie</td>
+<td>burr-TEE</td>
+<td>Lenoir</td>
+<td>lenn-NOR</td>
+</tr>
+<tr>
+<td>Bladen</td>
+<td>BLAY-din</td>
+<td>McDowell</td>
+<td>mick-DOW-ull</td>
+</tr>
+<tr>
+<td>Buncombe</td>
+<td>BUNK-um</td>
+<td>Pamlico</td>
+<td>PAM-lih-co</td>
+</tr>
+<tr>
+<td>Cabarrus</td>
+<td>kuh-BARE-us</td>
+<td>Pasquotank</td>
+<td>PASS-kwa-taink</td>
+</tr>
+<tr>
+<td>Carteret</td>
+<td>CARR-turr-ett</td>
+<td>Perquimans</td>
+<td>per-KWIM-ins</td>
+</tr>
+<tr>
+<td>Catawba</td>
+<td>kuh-TAHH-buh</td>
+<td>Robeson</td>
+<td>ROW-buh-sun</td>
+</tr>
+<tr>
+<td>Chowan</td>
+<td>cho-WAHHN</td>
+<td>Rowan</td>
+<td>row-ANN</td>
+</tr>
+<tr>
+<td>Currituck</td>
+<td>KURR-eh-tuck</td>
+<td>Rutherford</td>
+<td>RUH-tha-ferd</td>
+</tr>
+<tr>
+<td>Davie</td>
+<td>DAY-vee</td>
+<td>Transylvania</td>
+<td>tran-sill-VANE-yuh</td>
+</tr>
+<tr>
+<td>Duplin</td>
+<td>DOOP-len</td>
+<td>Tyrrell</td>
+<td>TAIR-ull</td>
+</tr>
+<tr>
+<td>Edgecombe</td>
+<td>EDGE-cumb</td>
+<td>Watauga</td>
+<td>wuh-TAHH-guh</td>
+</tr>
+<tr>
+<td>Forsyth</td>
+<td>for-sEYEth</td>
+<td>Yadkin</td>
+<td>YADD-ken</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+
+<table id="progeography" class="progeography">
+<caption style="font-weight:bold; font-size:17px";>NORTH CAROLINA LANDFORMS/GEOGRAPHY:<br></caption>
+<thead>
+<tr>
+<th>Landform</th>
+<th>Pronunciation</th>
+<th>Landform</th>
+<th>Pronunciation</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Appalachian</td>
+<td>APP-uh-LATCH-in</td>
+<td>Mt. Guyot</td>
+<td>GEE-yoh</td>
+</tr>
+<tr>
+<td>Bodie Island</td>
+<td>BODY</td>
+<td>Occoneechee Mtn</td>
+<td>OAK-uh-NEE-chee</td>
+</tr>
+<tr>
+<td>Camp Lejeune</td>
+<td>leh-ZHOON</td>
+<td>Pettigrew</td>
+<td>PET-uh-groo</td>
+</tr>
+<tr>
+<td>Celo Knob</td>
+<td>SEE-low</td>
+<td>Unaka Mtns</td>
+<td>yoo-NAKE-uh</td>
+</tr>
+<tr>
+<td>Chicamacomico</td>
+<td>CHICK-uh-muh-CAH-mih-co</td>
+<td>Unicoi Mountains</td>
+<td>YOO-nuh-COY</td>
+</tr>
+<tr>
+<td>Hibriten Mtn</td>
+<td>HI-bry-ten</td>
+<td>Uwharrie</td>
+<td>you-WARR-ee</td>
+</tr>
+<tr>
+<td>Konehete</td>
+<td>conn-uh-HEET-uh</td>
+<td>Wayah Bald</td>
+<td>WHY-uh</td>
+</tr>
+<tr>
+<td>Medoc Mountain</td>
+<td>MEE-dock</td>
+<td>Weymouth Woods</td>
+<td>WHEY-muth</td>
+</tr>
+<tr>
+<td>Morrow Mountain</td>
+<td>MORE-oh</td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+
+<table id="propeople" class="propeople">
+<caption style="font-weight:bold; font-size:17px";>NORTH CAROLINA PEOPLE/NATIVE NATIONS:<br></caption>
+<thead>
+<tr>
+<th>People</th>
+<th>Pronunciation</th>
+<th>People</th>
+<th>Pronunciation</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Coharie</td>
+<td>co-HAIR-ee</td>
+<td>Sappony</td>
+<td>suh-PONY</td>
+</tr>
+<tr>
+<td>Haliwa-Saponi</td>
+<td>HA-lih-WAH suh-PONY</td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+
+<table id="prorivers" class="prorivers">
+<caption style="font-weight:bold; font-size:17px";>NORTH CAROLINA RIVERS:<br></caption>
+<thead>
+<tr>
+<th>River</th>
+<th>Pronunciation</th>
+<th>River</th>
+<th>Pronunciation</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Ararat</td>
+<td>AIR-uh-rat</td>
+<td>Nolichucky</td>
+<td>NOLA-chuck-ee</td>
+</tr>
+<tr>
+<td>Cashie</td>
+<td>kuh-SHY</td>
+<td>Oconaluftee</td>
+<td>o-CON-uh-LUFF-tee</td>
+</tr>
+<tr>
+<td>Catawba</td>
+<td>kuh-TAHH-buh</td>
+<td>Pasquotank</td>
+<td>PASS-kwo-tank</td>
+</tr>
+<tr>
+<td>Chattooga</td>
+<td>sha-TOO-guh</td>
+<td>Perquimans</td>
+<td>per-KWI-mens</td>
+</tr>
+<tr>
+<td>Cheoah</td>
+<td>CHI-oh-wa</td>
+<td>Scuppernong</td>
+<td>SCUP-purr-nong</td>
+</tr>
+<tr>
+<td>Contentnea</td>
+<td>kunn-TENT-nee-uh</td>
+<td>Swannanoa</td>
+<td>SWAN-nuh-NO-uh</td>
+</tr>
+<tr>
+<td>Cullasaja</td>
+<td>COOL-uh-SAY-juh</td>
+<td>Toxaway</td>
+<td>TOCKS-away</td>
+</tr>
+<tr>
+<td>Hiwassee</td>
+<td>hi-WAHS-ee</td>
+<td>Tuckasegee</td>
+<td>TUCK-uh-SEE-jee</td>
+</tr>
+<tr>
+<td>Hyco</td>
+<td>HI-co</td>
+<td>Uwharrie</td>
+<td>you-WARR-ee</td>
+</tr>
+<tr>
+<td>Meherrin</td>
+<td>ma-HAIR-in</td>
+<td>Waccamaw</td>
+<td>WOK-uh-ma</td>
+</tr>
+<tr>
+<td>Nantahala</td>
+<td>NAN-tuh-HAY-luh</td>
+<td>Wiccacon</td>
+<td>WICK-ca-conn</td>
+</tr>
+<tr>
+<td>Neuse</td>
+<td>NOOSE</td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+<table id="prolakes" class="prolakes">
+<caption style="font-weight:bold; font-size:17px";>NORTH CAROLINA LAKES:<br></caption>
+<thead>
+<tr>
+<th>Lake</th>
+<th>Pronunciation</th>
+<th>Lake</th>
+<th>Pronunciation</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Badin</td>
+<td>BAY-den</td>
+<td>Michie</td>
+<td>MICK-ee</td>
+</tr>
+<tr>
+<td>Belews</td>
+<td>beh-LOOS</td>
+<td>Phelps</td>
+<td>FELPS</td>
+</tr>
+<tr>
+<td>Chatuge</td>
+<td>sha-TOOG</td>
+<td>Rhodhiss</td>
+<td>ROAD-iss</td>
+</tr>
+<tr>
+<td>Fontana</td>
+<td>fahn-TAN-nuh</td>
+<td>Santeetlah</td>
+<td>san-TEET-luh</td>
+</tr>
+<tr>
+<td>Gaston</td>
+<td>GAS-tun</td>
+<td>W. Kerr Scott</td>
+<td>KURR</td>
+</tr>
+<tr>
+<td>Kerr</td>
+<td>CAR</td>
+<td>Wylie</td>
+<td>WHY-lee</td>
+</tr>
+<tr>
+<td>Mattamuskeet</td>
+<td>MATT-uh-mus-KEET</td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody></table>
+
+</body>
+
