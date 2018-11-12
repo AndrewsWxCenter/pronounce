@@ -12,8 +12,12 @@
     <script>
 
 function init() {
-    var sorter1 = tsorter.create('rivers');
-    var sorter2 = tsorter.create('lakes');
+    var sorter1 = tsorter.create('procities');
+    var sorter2 = tsorter.create('procounties');
+    var sorter3 = tsorter.create('progeography');
+    var sorter4 = tsorter.create('propeople');
+    var sorter5 = tsorter.create('prorivers');
+    var sorter6 = tsorter.create('prolakes');
 }
 
 tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
@@ -541,7 +545,7 @@ addFunctionOnWindowLoad(GetClock);
 
 
 <table id="propeople" class="propeople">
-<caption style="font-weight:bold; font-size:17px";>NORTH CAROLINA PEOPLE/NATIVE NATIONS:<br></caption>
+<caption style="font-weight:bold; font-size:17px";>NORTH CAROLINA PEOPLE/NATIONS:<br></caption>
 <thead>
 <tr>
 <th>People</th>
@@ -729,5 +733,19 @@ addFunctionOnWindowLoad(GetClock);
 </tr>
 </tbody></table>
 
+
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+<p>Know of a uniquely-named city, region, landform, tribe, or other entity in North Carolina that you want to see added above? Email me: andrewswxcenter@gmail.com</p>
+
+
 </body>
+
 
